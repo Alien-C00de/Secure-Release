@@ -9,7 +9,7 @@ Secure Release is a comprehensive security-focused toolset designed to help deve
 ## 🚀 Project Overview
 
 - Secure Release is designed to help uncover, analyze, and fix security vulnerabilities across your codebase.
-- It integrates static application security testing (SAST) and scanning tools like Polaris, helping you find issues like SQL injection, cross-site scripting (XSS), improper session management, and missing encryption.
+- It integrates static application security testing (SAST) and scanning tools for helping you find issues like SQL injection, cross-site scripting (XSS), improper session management, and missing encryption.
 - The tool is ideal for developers aiming to integrate security checks into their development workflows and for security teams conducting audits and reviews.
 
 ---
@@ -17,7 +17,7 @@ Secure Release is a comprehensive security-focused toolset designed to help deve
 ## ✅ Key Features
 
 - **Comprehensive Security Checks**: Detects common vulnerabilities including SQL injection, XSS, insecure session handling, and missing encryption.
-- **Integration with Polaris SAST**: Provides detailed reports on code vulnerabilities.
+- **Integration with SAST**: Provides detailed reports on code vulnerabilities.
 - **Session, Authentication, and API Security**: Highlights weak points in session management, authentication flows, and sensitive endpoints.
 - **Encryption Best Practices**: Identifies missing or weak encryption configurations.
 - **Configurable Reports**: Generate reports in formats that suit your workflow.
@@ -25,4 +25,5 @@ Secure Release is a comprehensive security-focused toolset designed to help deve
 - **Extensible**: Easily add additional modules or integrate with CI/CD pipelines.
 
 ---
+
 
