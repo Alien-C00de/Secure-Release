@@ -1,0 +1,46 @@
+[11:45:28] INFO: Scanning Python dependencies...
+[11:45:28] WARNING: Safety scan failed
+[11:45:28] ERROR: Safety scan crashed
+[11:46:08] INFO: Scanning Python dependencies...
+[11:46:08] WARNING: Safety scan failed
+[11:46:08] ERROR: Safety scan crashed
+[12:23:58] INFO: Scanning Python dependencies...
+[12:23:58] WARNING: Safety scan failed
+[12:23:58] ERROR: Safety scan crashed
+[12:34:40] INFO: Scanning Python dependencies...
+[12:34:40] WARNING: Safety scan failed
+[12:34:40] ERROR: Safety scan crashed
+[12:36:17] INFO: Scanning Python dependencies...
+[12:36:17] WARNING: Safety scan failed
+[12:36:17] ERROR: Safety scan crashed
+[12:47:37] INFO: Scanning Python dependencies...
+[12:47:37] WARNING: Safety scan failed for ./sample_code/dvpwa\requirements.txt
+[12:47:37] ERROR: Error during scan: Expecting value: line 1 column 1 (char 0)
+[14:25:24] INFO: Scanning Python dependencies...
+[14:25:24] WARNING: Safety scan failed for ./sample_code/dvpwa\requirements.txt
+[14:25:24] ERROR: Error during scan: Expecting value: line 1 column 1 (char 0)
+[14:26:00] INFO: Scanning Python dependencies...
+[14:26:00] WARNING: Safety scan failed for ./sample_code/dvpwa\requirements.txt
+[14:26:00] ERROR: Error during scan: Expecting value: line 1 column 1 (char 0)
+[14:27:34] INFO: Scanning Python dependencies...
+[14:27:34] WARNING: Safety scan failed for ./sample_code/dvpwa\requirements.txt
+[14:27:34] ERROR: Error during scan: Expecting value: line 1 column 1 (char 0)
+[10:50:25] INFO: Scanning Python dependencies...
+[10:50:25] WARNING: Safety scan failed for ./sample_code/dvpwa\requirements.txt
+[10:50:25] ERROR: Error during scan: Expecting value: line 1 column 1 (char 0)
+[19:28:10] INFO: Scanning Python dependencies...
+[19:28:10] WARNING: Safety scan failed for ./sample_code/dvpwa\requirements.txt
+[19:28:10] ERROR: Error during scan: Expecting value: line 1 column 1 (char 0)
+[19:29:57] INFO: Scanning Python dependencies...
+[19:29:57] WARNING: Safety scan failed for ./sample_code/dvpwa\requirements.txt
+[19:29:57] ERROR: Error during scan: Expecting value: line 1 column 1 (char 0)
+[19:31:52] INFO: Scanning Python dependencies...
+[19:31:52] WARNING: Safety scan failed for ./sample_code/dvpwa\requirements.txt
+[19:31:52] ERROR: Error during scan: Expecting value: line 1 column 1 (char 0)
+[10:30:53] INFO: Scanning Python dependencies...
+[10:30:53] WARNING: Safety scan failed for ./sample_code/dvpwa\requirements.txt
+[10:30:53] ERROR: Error during scan: Expecting value: line 1 column 1 (char 0)
+[18:12:08] WARNING: Safety scan failed for ./sample_code/dvpwa\requirements.txt
+[18:12:08] ERROR: Error during scan: 'NoneType' object has no attribute 'get'
+[18:20:51] WARNING: Safety scan failed for ./sample_code/dvpwa\requirements.txt
+[18:20:51] ERROR: Error during scan: 'NoneType' object has no attribute 'get'

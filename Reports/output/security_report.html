@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+            <html lang="en"><head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width,initial-scale=1.0">
+                <title>SECURE RELEASE SAST Report</title>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+                <style>body {
+                font-family: Arial, Helvetica, sans-serif;
+                background: #111;
+                color: #eee;
+                margin: 0;
+                padding: 20px;
+            }
+            .container {
+                max-width: 1100px;
+                margin: auto;
+                background: #1f2937;
+                padding: 20px;
+                border-radius: 10px;
+            }
+            .header {
+                background: #fde047;
+                color: #222;
+                padding: 14px;
+                border-radius: 8px;
+                text-align: center;
+            }
+            .header h1 {
+                margin: 0;
+                font-size: 30px;
+            }
+            .header h2 {
+                margin: 4px 0 0 0;
+                font-size: 20px;
+                font-weight: normal;
+                color: #333;
+            }
+            .header h4 {
+                margin: 4px 0 0 0;
+                font-size: 14px;
+                font-weight: normal;
+                color: #333;
+                text-align: right;
+            }
+            .timestamp {
+                font-size: 14px;
+                text-align: right;
+                margin: 10px 0 16px 0;
+            }
+            .timestamp div {
+                margin: 4px 0;
+            }
+            .section {
+                background: #0f172a;
+                border: 1px solid #334155;
+                border-radius: 8px;
+                margin: 14px 0;
+                overflow: hidden;
+            }
+            .section-title {
+                margin: 0;
+                padding: 10px 14px;
+                color: #fff;
+                font-weight: 800;
+            }
+            .sec-secret {
+                background: linear-gradient(90deg,#0ea5e9,#38bdf8);
+            }
+            .sec-code {
+                background: linear-gradient(90deg,#10b981,#34d399);
+            }
+            .sec-dep {
+                background: linear-gradient(90deg,#8b5cf6,#a78bfa);
+            }
+            .card {
+                padding: 14px;
+            }
+            .item {
+                background: #111827;
+                border: 1px solid #374151;
+                border-radius: 8px;
+                padding: 10px;
+                margin: 10px 0;
+            }
+            .k {
+                font-weight: 700;
+                color: #e7650f;
+                min-width: 140px;
+                display: inline-block;
+            }
+            code {
+                background: #111;
+                padding: 2px 6px;
+                border-radius: 4px;
+            }
+            .sev-critical {
+                background: #fecaca;
+                color: #7f1d1d;
+                padding: 2px 6px;
+                border-radius: 6px;
+                font-weight: 700;
+            }
+            .sev-high {
+                background: #fee2e2;
+                color: #991b1b;
+                padding: 2px 6px;
+                border-radius: 6px;
+                font-weight: 700;
+            }
+            .sev-medium {
+                background: #fef3c7;
+                color: #92400e;
+                padding: 2px 6px;
+                border-radius: 6px;
+                font-weight: 700;
+            }
+            .sev-low {
+                background: #d1fae5;
+                color: #065f46;
+                padding: 2px 6px;
+                border-radius: 6px;
+                font-weight: 700;
+            }
+            .sev-info {
+                background: #e0e7ff;
+                color: #3730a3;
+                padding: 2px 6px;
+                border-radius: 6px;
+                font-weight: 700;
+            }
+            footer {
+                margin-top: 20px;
+                text-align: center;
+                background: #fde047;
+                color: #222;
+                padding: 10px;
+                border-radius: 6px;
+            }
+    </style>
+            </head>
+            <body>
+            <div class="container">
+                <div class="header">
+                    <h1><span style="font-size: 1.5em;">🕵️</span> SECURE RELEASE</h1>
+                    <h2>📊 SAST Report - Total Findings (34)</h2>
+                    <h4>Application: AltoroJ-AltoroJ-3.2 | Version: 3.2.0 | Technology: Java</h4>
+                </div>
+                <div class="timestamp">
+                    <div>🕒 Report Generated: Monday 15-Sep-2025 19:30:59</div>
+                </div>
+            <div class="section"><div class="section-title sec-secret"><span style="font-size:1.25em;">🔑</span> Secret Scanner (0)</div><div class="card"><div class="item">No issues found.</div></div></div><div class="section"><div class="section-title sec-code"><span style="font-size:1.25em;">🧑‍💻</span> Code Analyzer (12)</div><div class="card"><div class="item"><div><span class="k">Impact:</span> <span class="sev-medium">MEDIUM</span></div><div><span class="k">File:</span> C:\Users\A181244\OneDrive - ATOS\Santosh\Personal\Training\Python\Secure_RELEASE\Sample_code\AltoroJ-AltoroJ-3.2\src\com\ibm\security\appscan\altoromutual\servlet\AdminServlet.java</div><div><span class="k">Line:</span> 118</div><div><span class="k">Pattern_name:</span> java.lang.security.audit.tainted-session-from-http-request.tainted-session-from-http-request</div><div><span class="k">Line_content:</span> Detected input from a HTTPServletRequest going into a session command, like `setAttribute`. User input into such a command could lead to an attacker inputting malicious code into your session parameters, blurring the line between what&#x27;s trusted and untrusted, and therefore leading to a trust boundary violation. This could lead to programmers trusting unvalidated data. Instead, thoroughly sanitize user input before passing it into such function calls.</div><div><span class="k">Owasp:</span> A04:2021 - Insecure Design</div></div><div class="item"><div><span class="k">Impact:</span> <span class="sev-medium">MEDIUM</span></div><div><span class="k">File:</span> C:\Users\A181244\OneDrive - ATOS\Santosh\Personal\Training\Python\Secure_RELEASE\Sample_code\AltoroJ-AltoroJ-3.2\src\com\ibm\security\appscan\altoromutual\servlet\SurveyServlet.java</div><div><span class="k">Line:</span> 98</div><div><span class="k">Pattern_name:</span> java.lang.security.audit.tainted-session-from-http-request.tainted-session-from-http-request</div><div><span class="k">Line_content:</span> Detected input from a HTTPServletRequest going into a session command, like `setAttribute`. User input into such a command could lead to an attacker inputting malicious code into your session parameters, blurring the line between what&#x27;s trusted and untrusted, and therefore leading to a trust boundary violation. This could lead to programmers trusting unvalidated data. Instead, thoroughly sanitize user input before passing it into such function calls.</div><div><span class="k">Owasp:</span> A04:2021 - Insecure Design</div></div><div class="item"><div><span class="k">Impact:</span> <span class="sev-medium">MEDIUM</span></div><div><span class="k">File:</span> C:\Users\A181244\OneDrive - ATOS\Santosh\Personal\Training\Python\Secure_RELEASE\Sample_code\AltoroJ-AltoroJ-3.2\src\com\ibm\security\appscan\altoromutual\servlet\SurveyServlet.java</div><div><span class="k">Line:</span> 101</div><div><span class="k">Pattern_name:</span> java.lang.security.audit.xss.no-direct-response-writer.no-direct-response-writer</div><div><span class="k">Line_content:</span> Detected a request with potential user-input going into a OutputStream or Writer object. This bypasses any view or template environments, including HTML escaping, which may expose this application to cross-site scripting (XSS) vulnerabilities. Consider using a view technology such as JavaServer Faces (JSFs) which automatically escapes HTML views.</div><div><span class="k">Owasp:</span> A07:2017 - Cross-Site Scripting (XSS), A03:2021 - Injection</div></div><div class="item"><div><span class="k">Impact:</span> <span class="sev-medium">MEDIUM</span></div><div><span class="k">File:</span> C:\Users\A181244\OneDrive - ATOS\Santosh\Personal\Training\Python\Secure_RELEASE\Sample_code\AltoroJ-AltoroJ-3.2\src\com\ibm\security\appscan\altoromutual\util\DBUtil.java</div><div><span class="k">Line:</span> 219</div><div><span class="k">Pattern_name:</span> java.lang.security.audit.formatted-sql-string.formatted-sql-string</div><div><span class="k">Line_content:</span> Detected a formatted string in a SQL statement. This could lead to SQL injection if variables in the SQL statement are not properly sanitized. Use a prepared statements (java.sql.PreparedStatement) instead. You can obtain a PreparedStatement using &#x27;connection.prepareStatement&#x27;.</div><div><span class="k">Owasp:</span> A01:2017 - Injection, A03:2021 - Injection</div></div><div class="item"><div><span class="k">Impact:</span> <span class="sev-medium">MEDIUM</span></div><div><span class="k">File:</span> C:\Users\A181244\OneDrive - ATOS\Santosh\Personal\Training\Python\Secure_RELEASE\Sample_code\AltoroJ-AltoroJ-3.2\src\com\ibm\security\appscan\altoromutual\util\DBUtil.java</div><div><span class="k">Line:</span> 242</div><div><span class="k">Pattern_name:</span> java.lang.security.audit.formatted-sql-string.formatted-sql-string</div><div><span class="k">Line_content:</span> Detected a formatted string in a SQL statement. This could lead to SQL injection if variables in the SQL statement are not properly sanitized. Use a prepared statements (java.sql.PreparedStatement) instead. You can obtain a PreparedStatement using &#x27;connection.prepareStatement&#x27;.</div><div><span class="k">Owasp:</span> A01:2017 - Injection, A03:2021 - Injection</div></div><div class="item"><div><span class="k">Impact:</span> <span class="sev-medium">MEDIUM</span></div><div><span class="k">File:</span> C:\Users\A181244\OneDrive - ATOS\Santosh\Personal\Training\Python\Secure_RELEASE\Sample_code\AltoroJ-AltoroJ-3.2\src\com\ibm\security\appscan\altoromutual\util\DBUtil.java</div><div><span class="k">Line:</span> 276</div><div><span class="k">Pattern_name:</span> java.lang.security.audit.formatted-sql-string.formatted-sql-string</div><div><span class="k">Line_content:</span> Detected a formatted string in a SQL statement. This could lead to SQL injection if variables in the SQL statement are not properly sanitized. Use a prepared statements (java.sql.PreparedStatement) instead. You can obtain a PreparedStatement using &#x27;connection.prepareStatement&#x27;.</div><div><span class="k">Owasp:</span> A01:2017 - Injection, A03:2021 - Injection</div></div><div class="item"><div><span class="k">Impact:</span> <span class="sev-medium">MEDIUM</span></div><div><span class="k">File:</span> C:\Users\A181244\OneDrive - ATOS\Santosh\Personal\Training\Python\Secure_RELEASE\Sample_code\AltoroJ-AltoroJ-3.2\src\com\ibm\security\appscan\altoromutual\util\DBUtil.java</div><div><span class="k">Line:</span> 403</div><div><span class="k">Pattern_name:</span> java.lang.security.audit.formatted-sql-string.formatted-sql-string</div><div><span class="k">Line_content:</span> Detected a formatted string in a SQL statement. This could lead to SQL injection if variables in the SQL statement are not properly sanitized. Use a prepared statements (java.sql.PreparedStatement) instead. You can obtain a PreparedStatement using &#x27;connection.prepareStatement&#x27;.</div><div><span class="k">Owasp:</span> A01:2017 - Injection, A03:2021 - Injection</div></div><div class="item"><div><span class="k">Impact:</span> <span class="sev-medium">MEDIUM</span></div><div><span class="k">File:</span> C:\Users\A181244\OneDrive - ATOS\Santosh\Personal\Training\Python\Secure_RELEASE\Sample_code\AltoroJ-AltoroJ-3.2\src\com\ibm\security\appscan\altoromutual\util\DBUtil.java</div><div><span class="k">Line:</span> 471</div><div><span class="k">Pattern_name:</span> java.lang.security.audit.formatted-sql-string.formatted-sql-string</div><div><span class="k">Line_content:</span> Detected a formatted string in a SQL statement. This could lead to SQL injection if variables in the SQL statement are not properly sanitized. Use a prepared statements (java.sql.PreparedStatement) instead. You can obtain a PreparedStatement using &#x27;connection.prepareStatement&#x27;.</div><div><span class="k">Owasp:</span> A01:2017 - Injection, A03:2021 - Injection</div></div><div class="item"><div><span class="k">Impact:</span> <span class="sev-medium">MEDIUM</span></div><div><span class="k">File:</span> C:\Users\A181244\OneDrive - ATOS\Santosh\Personal\Training\Python\Secure_RELEASE\Sample_code\AltoroJ-AltoroJ-3.2\src\com\ibm\security\appscan\altoromutual\util\DBUtil.java</div><div><span class="k">Line:</span> 482</div><div><span class="k">Pattern_name:</span> java.lang.security.audit.formatted-sql-string.formatted-sql-string</div><div><span class="k">Line_content:</span> Detected a formatted string in a SQL statement. This could lead to SQL injection if variables in the SQL statement are not properly sanitized. Use a prepared statements (java.sql.PreparedStatement) instead. You can obtain a PreparedStatement using &#x27;connection.prepareStatement&#x27;.</div><div><span class="k">Owasp:</span> A01:2017 - Injection, A03:2021 - Injection</div></div><div class="item"><div><span class="k">Impact:</span> <span class="sev-medium">MEDIUM</span></div><div><span class="k">File:</span> C:\Users\A181244\OneDrive - ATOS\Santosh\Personal\Training\Python\Secure_RELEASE\Sample_code\AltoroJ-AltoroJ-3.2\src\com\ibm\security\appscan\altoromutual\util\DBUtil.java</div><div><span class="k">Line:</span> 494</div><div><span class="k">Pattern_name:</span> java.lang.security.audit.formatted-sql-string.formatted-sql-string</div><div><span class="k">Line_content:</span> Detected a formatted string in a SQL statement. This could lead to SQL injection if variables in the SQL statement are not properly sanitized. Use a prepared statements (java.sql.PreparedStatement) instead. You can obtain a PreparedStatement using &#x27;connection.prepareStatement&#x27;.</div><div><span class="k">Owasp:</span> A01:2017 - Injection, A03:2021 - Injection</div></div><div class="item"><div><span class="k">Impact:</span> <span class="sev-medium">MEDIUM</span></div><div><span class="k">File:</span> C:\Users\A181244\OneDrive - ATOS\Santosh\Personal\Training\Python\Secure_RELEASE\Sample_code\AltoroJ-AltoroJ-3.2\src\com\ibm\security\appscan\altoromutual\util\DBUtil.java</div><div><span class="k">Line:</span> 506</div><div><span class="k">Pattern_name:</span> java.lang.security.audit.formatted-sql-string.formatted-sql-string</div><div><span class="k">Line_content:</span> Detected a formatted string in a SQL statement. This could lead to SQL injection if variables in the SQL statement are not properly sanitized. Use a prepared statements (java.sql.PreparedStatement) instead. You can obtain a PreparedStatement using &#x27;connection.prepareStatement&#x27;.</div><div><span class="k">Owasp:</span> A01:2017 - Injection, A03:2021 - Injection</div></div><div class="item"><div><span class="k">Impact:</span> <span class="sev-medium">MEDIUM</span></div><div><span class="k">File:</span> C:\Users\A181244\OneDrive - ATOS\Santosh\Personal\Training\Python\Secure_RELEASE\Sample_code\AltoroJ-AltoroJ-3.2\src\com\ibm\security\appscan\altoromutual\util\DBUtil.java</div><div><span class="k">Line:</span> 519</div><div><span class="k">Pattern_name:</span> java.lang.security.audit.formatted-sql-string.formatted-sql-string</div><div><span class="k">Line_content:</span> Detected a formatted string in a SQL statement. This could lead to SQL injection if variables in the SQL statement are not properly sanitized. Use a prepared statements (java.sql.PreparedStatement) instead. You can obtain a PreparedStatement using &#x27;connection.prepareStatement&#x27;.</div><div><span class="k">Owasp:</span> A01:2017 - Injection, A03:2021 - Injection</div></div></div></div><div class="section"><div class="section-title sec-dep"><span style="font-size:1.25em;">📚</span> Dependency Scan (22)</div><div class="card"><div class="item"><div><span class="k">Filename:</span> Log4AltoroJ.jar</div><div><span class="k">Filepath:</span> C:\Users\A181244\OneDrive - ATOS\Santosh\Personal\Training\Python\Secure_RELEASE\Sample_code\AltoroJ-AltoroJ-3.2\WebContent\WEB-INF\lib\Log4AltoroJ.jar</div><div><span class="k">Name:</span> CVE-2012-0738</div><div><span class="k">Severity:</span> <span class="sev-medium">MEDIUM</span></div><div><span class="k">Description:</span> IBM Security AppScan Enterprise before 8.6.0.2 and Rational Policy Tester before 8.5.0.3 do not validate X.509 certificates during scanning, which all</div></div><div class="item"><div><span class="k">Filename:</span> Log4AltoroJ.jar</div><div><span class="k">Filepath:</span> C:\Users\A181244\OneDrive - ATOS\Santosh\Personal\Training\Python\Secure_RELEASE\Sample_code\AltoroJ-AltoroJ-3.2\WebContent\WEB-INF\lib\Log4AltoroJ.jar</div><div><span class="k">Name:</span> CVE-2012-0741</div><div><span class="k">Severity:</span> <span class="sev-medium">MEDIUM</span></div><div><span class="k">Description:</span> IBM Security AppScan Enterprise before 8.6.0.2 and Rational Policy Tester before 8.5.0.3 do not validate X.509 certificates during use of the Manual E</div></div><div class="item"><div><span class="k">Filename:</span> Log4AltoroJ.jar</div><div><span class="k">Filepath:</span> C:\Users\A181244\OneDrive - ATOS\Santosh\Personal\Training\Python\Secure_RELEASE\Sample_code\AltoroJ-AltoroJ-3.2\WebContent\WEB-INF\lib\Log4AltoroJ.jar</div><div><span class="k">Name:</span> CVE-2013-0531</div><div><span class="k">Severity:</span> <span class="sev-medium">MEDIUM</span></div><div><span class="k">Description:</span> The SSL implementation in IBM Security AppScan Enterprise before 8.7.0.1 enables cipher suites with weak encryption algorithms, which makes it easier </div></div><div class="item"><div><span class="k">Filename:</span> Log4AltoroJ.jar</div><div><span class="k">Filepath:</span> C:\Users\A181244\OneDrive - ATOS\Santosh\Personal\Training\Python\Secure_RELEASE\Sample_code\AltoroJ-AltoroJ-3.2\WebContent\WEB-INF\lib\Log4AltoroJ.jar</div><div><span class="k">Name:</span> CVE-2013-2997</div><div><span class="k">Severity:</span> <span class="sev-low">LOW</span></div><div><span class="k">Description:</span> IBM Security AppScan Enterprise before 8.7 does not invalidate the session context upon a logout action, which allows remote attackers to hijack sessi</div></div><div class="item"><div><span class="k">Filename:</span> handlebars-2.0.0.js</div><div><span class="k">Filepath:</span> C:\Users\A181244\OneDrive - ATOS\Santosh\Personal\Training\Python\Secure_RELEASE\Sample_code\AltoroJ-AltoroJ-3.2\WebContent\swagger\lib\handlebars-2.0.0.js</div><div><span class="k">Name:</span> CVE-2019-19919</div><div><span class="k">Severity:</span> <span class="sev-critical">CRITICAL</span></div><div><span class="k">Description:</span> Versions of handlebars prior to 4.3.0 are vulnerable to Prototype Pollution leading to Remote Code Execution. Templates may alter an Object&#x27;s __proto_</div></div><div class="item"><div><span class="k">Filename:</span> handlebars-2.0.0.js</div><div><span class="k">Filepath:</span> C:\Users\A181244\OneDrive - ATOS\Santosh\Personal\Training\Python\Secure_RELEASE\Sample_code\AltoroJ-AltoroJ-3.2\WebContent\swagger\lib\handlebars-2.0.0.js</div><div><span class="k">Name:</span> CVE-2021-23369</div><div><span class="k">Severity:</span> <span class="sev-critical">CRITICAL</span></div><div><span class="k">Description:</span> The package handlebars before 4.7.7 are vulnerable to Remote Code Execution (RCE) when selecting certain compiling options to compile templates coming</div></div><div class="item"><div><span class="k">Filename:</span> handlebars-2.0.0.js</div><div><span class="k">Filepath:</span> C:\Users\A181244\OneDrive - ATOS\Santosh\Personal\Training\Python\Secure_RELEASE\Sample_code\AltoroJ-AltoroJ-3.2\WebContent\swagger\lib\handlebars-2.0.0.js</div><div><span class="k">Name:</span> CVE-2021-23383</div><div><span class="k">Severity:</span> <span class="sev-critical">CRITICAL</span></div><div><span class="k">Description:</span> The package handlebars before 4.7.7 are vulnerable to Prototype Pollution when selecting certain compiling options to compile templates coming from an</div></div><div class="item"><div><span class="k">Filename:</span> handlebars-2.0.0.js</div><div><span class="k">Filepath:</span> C:\Users\A181244\OneDrive - ATOS\Santosh\Personal\Training\Python\Secure_RELEASE\Sample_code\AltoroJ-AltoroJ-3.2\WebContent\swagger\lib\handlebars-2.0.0.js</div><div><span class="k">Name:</span> CVE-2019-20920</div><div><span class="k">Severity:</span> <span class="sev-high">HIGH</span></div><div><span class="k">Description:</span> Handlebars before 3.0.8 and 4.x before 4.5.3 is vulnerable to Arbitrary Code Execution. The lookup helper fails to properly validate templates, allowi</div></div><div class="item"><div><span class="k">Filename:</span> handlebars-2.0.0.js</div><div><span class="k">Filepath:</span> C:\Users\A181244\OneDrive - ATOS\Santosh\Personal\Training\Python\Secure_RELEASE\Sample_code\AltoroJ-AltoroJ-3.2\WebContent\swagger\lib\handlebars-2.0.0.js</div><div><span class="k">Name:</span> Prototype pollution</div><div><span class="k">Severity:</span> <span class="sev-high">high</span></div><div><span class="k">Description:</span> Prototype pollution</div></div><div class="item"><div><span class="k">Filename:</span> handlebars-2.0.0.js</div><div><span class="k">Filepath:</span> C:\Users\A181244\OneDrive - ATOS\Santosh\Personal\Training\Python\Secure_RELEASE\Sample_code\AltoroJ-AltoroJ-3.2\WebContent\swagger\lib\handlebars-2.0.0.js</div><div><span class="k">Name:</span> Versions of `handlebars` prior to 3.0.8 or 4.5.2 are vulnerable to Arbitrary Code Execution. The package&#x27;s lookup helper fails to properly validate templates, allowing attackers to submit templates that execute arbitrary JavaScript in the system. It can be used to run arbitrary code in a server processing Handlebars templates or on a victim&#x27;s browser (effectively serving as Cross-Site Scripting).
+
+The following template can be used to demonstrate the vulnerability:  
+```{{#with &quot;constructor&quot;}}
+	{{#with split as |a|}}
+		{{pop (push &quot;alert(&#x27;Vulnerable Handlebars JS&#x27;);&quot;)}}
+		{{#with (concat (lookup join (slice 0 1)))}}
+			{{#each (slice 2 3)}}
+				{{#with (apply 0 a)}}
+					{{.}}
+				{{/with}}
+			{{/each}}
+		{{/with}}
+	{{/with}}
+{{/with}}```
+
+
+## Recommendation
+
+Upgrade to version 3.0.8, 4.5.2 or later.</div><div><span class="k">Severity:</span> <span class="sev-high">high</span></div><div><span class="k">Description:</span> Versions of `handlebars` prior to 3.0.8 or 4.5.2 are vulnerable to Arbitrary Code Execution. The package&#x27;s lookup helper fails to properly validate te</div></div><div class="item"><div><span class="k">Filename:</span> handlebars-2.0.0.js</div><div><span class="k">Filepath:</span> C:\Users\A181244\OneDrive - ATOS\Santosh\Personal\Training\Python\Secure_RELEASE\Sample_code\AltoroJ-AltoroJ-3.2\WebContent\swagger\lib\handlebars-2.0.0.js</div><div><span class="k">Name:</span> Versions of `handlebars` prior to 3.0.8 or 4.5.3 are vulnerable to Arbitrary Code Execution. The package&#x27;s lookup helper fails to properly validate templates, allowing attackers to submit templates that execute arbitrary JavaScript in the system. It is due to an incomplete fix for a [previous issue](https://www.npmjs.com/advisories/1316). This vulnerability can be used to run arbitrary code in a server processing Handlebars templates or on a victim&#x27;s browser (effectively serving as Cross-Site Scripting)</div><div><span class="k">Severity:</span> <span class="sev-high">high</span></div><div><span class="k">Description:</span> Versions of `handlebars` prior to 3.0.8 or 4.5.3 are vulnerable to Arbitrary Code Execution. The package&#x27;s lookup helper fails to properly validate te</div></div><div class="item"><div><span class="k">Filename:</span> handlebars-2.0.0.js</div><div><span class="k">Filepath:</span> C:\Users\A181244\OneDrive - ATOS\Santosh\Personal\Training\Python\Secure_RELEASE\Sample_code\AltoroJ-AltoroJ-3.2\WebContent\swagger\lib\handlebars-2.0.0.js</div><div><span class="k">Name:</span> handlebars issue: 1495</div><div><span class="k">Severity:</span> <span class="sev-high">high</span></div><div><span class="k">Description:</span> A prototype pollution vulnerability in handlebars is exploitable if an attacker can control the template</div></div><div class="item"><div><span class="k">Filename:</span> handlebars-2.0.0.js</div><div><span class="k">Filepath:</span> C:\Users\A181244\OneDrive - ATOS\Santosh\Personal\Training\Python\Secure_RELEASE\Sample_code\AltoroJ-AltoroJ-3.2\WebContent\swagger\lib\handlebars-2.0.0.js</div><div><span class="k">Name:</span> CVE-2015-8861</div><div><span class="k">Severity:</span> <span class="sev-medium">MEDIUM</span></div><div><span class="k">Description:</span> The handlebars package before 4.0.0 for Node.js allows remote attackers to conduct cross-site scripting (XSS) attacks by leveraging a template with an</div></div><div class="item"><div><span class="k">Filename:</span> handlebars-2.0.0.js</div><div><span class="k">Filepath:</span> C:\Users\A181244\OneDrive - ATOS\Santosh\Personal\Training\Python\Secure_RELEASE\Sample_code\AltoroJ-AltoroJ-3.2\WebContent\swagger\lib\handlebars-2.0.0.js</div><div><span class="k">Name:</span> handlebars issue: 1633</div><div><span class="k">Severity:</span> <span class="sev-medium">medium</span></div><div><span class="k">Description:</span> Denial of service</div></div><div class="item"><div><span class="k">Filename:</span> jquery-1.8.0.min.js</div><div><span class="k">Filepath:</span> C:\Users\A181244\OneDrive - ATOS\Santosh\Personal\Training\Python\Secure_RELEASE\Sample_code\AltoroJ-AltoroJ-3.2\WebContent\swagger\lib\jquery-1.8.0.min.js</div><div><span class="k">Name:</span> CVE-2012-6708</div><div><span class="k">Severity:</span> <span class="sev-medium">MEDIUM</span></div><div><span class="k">Description:</span> jQuery before 1.9.0 is vulnerable to Cross-site Scripting (XSS) attacks. The jQuery(strInput) function does not differentiate selectors from HTML in a</div></div><div class="item"><div><span class="k">Filename:</span> jquery-1.8.0.min.js</div><div><span class="k">Filepath:</span> C:\Users\A181244\OneDrive - ATOS\Santosh\Personal\Training\Python\Secure_RELEASE\Sample_code\AltoroJ-AltoroJ-3.2\WebContent\swagger\lib\jquery-1.8.0.min.js</div><div><span class="k">Name:</span> CVE-2015-9251</div><div><span class="k">Severity:</span> <span class="sev-medium">MEDIUM</span></div><div><span class="k">Description:</span> jQuery before 3.0.0 is vulnerable to Cross-site Scripting (XSS) attacks when a cross-domain Ajax request is performed without the dataType option, cau</div></div><div class="item"><div><span class="k">Filename:</span> jquery-1.8.0.min.js</div><div><span class="k">Filepath:</span> C:\Users\A181244\OneDrive - ATOS\Santosh\Personal\Training\Python\Secure_RELEASE\Sample_code\AltoroJ-AltoroJ-3.2\WebContent\swagger\lib\jquery-1.8.0.min.js</div><div><span class="k">Name:</span> CVE-2019-11358</div><div><span class="k">Severity:</span> <span class="sev-medium">MEDIUM</span></div><div><span class="k">Description:</span> jQuery before 3.4.0, as used in Drupal, Backdrop CMS, and other products, mishandles jQuery.extend(true, {}, ...) because of Object.prototype pollutio</div></div><div class="item"><div><span class="k">Filename:</span> jquery-1.8.0.min.js</div><div><span class="k">Filepath:</span> C:\Users\A181244\OneDrive - ATOS\Santosh\Personal\Training\Python\Secure_RELEASE\Sample_code\AltoroJ-AltoroJ-3.2\WebContent\swagger\lib\jquery-1.8.0.min.js</div><div><span class="k">Name:</span> CVE-2020-11022</div><div><span class="k">Severity:</span> <span class="sev-medium">MEDIUM</span></div><div><span class="k">Description:</span> In jQuery versions greater than or equal to 1.2 and before 3.5.0, passing HTML from untrusted sources - even after sanitizing it - to one of jQuery&#x27;s </div></div><div class="item"><div><span class="k">Filename:</span> jquery-1.8.0.min.js</div><div><span class="k">Filepath:</span> C:\Users\A181244\OneDrive - ATOS\Santosh\Personal\Training\Python\Secure_RELEASE\Sample_code\AltoroJ-AltoroJ-3.2\WebContent\swagger\lib\jquery-1.8.0.min.js</div><div><span class="k">Name:</span> CVE-2020-11023</div><div><span class="k">Severity:</span> <span class="sev-medium">MEDIUM</span></div><div><span class="k">Description:</span> In jQuery versions greater than or equal to 1.0.3 and before 3.5.0, passing HTML containing &lt;option&gt; elements from untrusted sources - even after sani</div></div><div class="item"><div><span class="k">Filename:</span> jquery-1.8.0.min.js</div><div><span class="k">Filepath:</span> C:\Users\A181244\OneDrive - ATOS\Santosh\Personal\Training\Python\Secure_RELEASE\Sample_code\AltoroJ-AltoroJ-3.2\WebContent\swagger\lib\jquery-1.8.0.min.js</div><div><span class="k">Name:</span> CVE-2020-7656</div><div><span class="k">Severity:</span> <span class="sev-medium">MEDIUM</span></div><div><span class="k">Description:</span> jquery prior to 1.9.0 allows Cross-site Scripting attacks via the load method. The load method fails to recognize and remove &quot;&lt;script&gt;&quot; HTML tags that</div></div><div class="item"><div><span class="k">Filename:</span> jquery-1.8.0.min.js</div><div><span class="k">Filepath:</span> C:\Users\A181244\OneDrive - ATOS\Santosh\Personal\Training\Python\Secure_RELEASE\Sample_code\AltoroJ-AltoroJ-3.2\WebContent\swagger\lib\jquery-1.8.0.min.js</div><div><span class="k">Name:</span> jquery issue: 162</div><div><span class="k">Severity:</span> <span class="sev-low">low</span></div><div><span class="k">Description:</span> jQuery 1.x and 2.x are End-of-Life and no longer receiving security updates</div></div><div class="item"><div><span class="k">Filename:</span> underscore-min.js</div><div><span class="k">Filepath:</span> C:\Users\A181244\OneDrive - ATOS\Santosh\Personal\Training\Python\Secure_RELEASE\Sample_code\AltoroJ-AltoroJ-3.2\WebContent\swagger\lib\underscore-min.js</div><div><span class="k">Name:</span> CVE-2021-23358</div><div><span class="k">Severity:</span> <span class="sev-high">HIGH</span></div><div><span class="k">Description:</span> The package underscore from 1.13.0-0 and before 1.13.0-2, from 1.3.2 and before 1.12.1 are vulnerable to Arbitrary Code Injection via the template fun</div></div></div></div>
+        <footer>
+            Secure Release Report. All Rights Reserved &middot; © 2025 Alien Security
+        </footer>
+    </div></body></html>
+    
