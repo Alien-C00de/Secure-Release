@@ -1,0 +1,73 @@
+{
+    "Code Analyzer": [],
+    "Dependency Scan": [
+        {
+            "fileName": "jquery-3.2.1.min.js",
+            "filePath": "C:\\Users\\A181244\\OneDrive - ATOS\\Santosh\\Personal\\Training\\Python\\Secure-Release\\Sample_code\\dvpwa\\sqli\\static\\js\\jquery-3.2.1.min.js",
+            "name": "CVE-2019-11358",
+            "severity": "MEDIUM",
+            "description": "jQuery before 3.4.0, as used in Drupal, Backdrop CMS, and other products, mishandles jQuery.extend(true, {}, ...) because of Object.prototype pollutio"
+        },
+        {
+            "fileName": "jquery-3.2.1.min.js",
+            "filePath": "C:\\Users\\A181244\\OneDrive - ATOS\\Santosh\\Personal\\Training\\Python\\Secure-Release\\Sample_code\\dvpwa\\sqli\\static\\js\\jquery-3.2.1.min.js",
+            "name": "CVE-2020-11022",
+            "severity": "MEDIUM",
+            "description": "In jQuery versions greater than or equal to 1.2 and before 3.5.0, passing HTML from untrusted sources - even after sanitizing it - to one of jQuery's "
+        },
+        {
+            "fileName": "jquery-3.2.1.min.js",
+            "filePath": "C:\\Users\\A181244\\OneDrive - ATOS\\Santosh\\Personal\\Training\\Python\\Secure-Release\\Sample_code\\dvpwa\\sqli\\static\\js\\jquery-3.2.1.min.js",
+            "name": "CVE-2020-11023",
+            "severity": "MEDIUM",
+            "description": "In jQuery versions greater than or equal to 1.0.3 and before 3.5.0, passing HTML containing <option> elements from untrusted sources - even after sani"
+        }
+    ],
+    "Secret Scanner": [
+        {
+            "severity": "High",
+            "file": "C:\\Users\\A181244\\OneDrive - ATOS\\Santosh\\Personal\\Training\\Python\\Secure-Release\\Sample_code\\dvpwa\\appscan-config.xml",
+            "line": 2,
+            "type": "Secret Keyword",
+            "match": "true",
+            "Tool Details": {
+                "SourceID": null,
+                "SourceType": null,
+                "Verified": false,
+                "SecretHash": "5ffe533b830f08a0326348a9160afafc8ada44db",
+                "Commit": null,
+                "Path": "C:\\Users\\A181244\\OneDrive - ATOS\\Santosh\\Personal\\Training\\Python\\Secure-Release\\Sample_code\\dvpwa\\appscan-config.xml"
+            }
+        },
+        {
+            "severity": "High",
+            "file": "C:\\Users\\A181244\\OneDrive - ATOS\\Santosh\\Personal\\Training\\Python\\Secure-Release\\Sample_code\\dvpwa\\result.json",
+            "line": 42,
+            "type": "Hex High Entropy String",
+            "match": "d37b7699aa91b182ce9a25fe1cdb6e20ba0ed1b1",
+            "Tool Details": {
+                "SourceID": null,
+                "SourceType": null,
+                "Verified": false,
+                "SecretHash": "a032be5dbcc66b5262edfd37981fed65c76e1aa5",
+                "Commit": null,
+                "Path": "C:\\Users\\A181244\\OneDrive - ATOS\\Santosh\\Personal\\Training\\Python\\Secure-Release\\Sample_code\\dvpwa\\result.json"
+            }
+        },
+        {
+            "severity": "High",
+            "file": "C:\\Users\\A181244\\OneDrive - ATOS\\Santosh\\Personal\\Training\\Python\\Secure-Release\\Sample_code\\dvpwa\\config\\dev.yaml",
+            "line": 3,
+            "type": "Secret Keyword",
+            "match": "postgres",
+            "Tool Details": {
+                "SourceID": null,
+                "SourceType": null,
+                "Verified": false,
+                "SecretHash": "afc848c316af1a89d49826c5ae9d00ed769415f3",
+                "Commit": null,
+                "Path": "C:\\Users\\A181244\\OneDrive - ATOS\\Santosh\\Personal\\Training\\Python\\Secure-Release\\Sample_code\\dvpwa\\config\\dev.yaml"
+            }
+        }
+    ]
+}

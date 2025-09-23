@@ -1,0 +1,68 @@
+Assessment_Project_Details:
+  name: AltoroJ-AltoroJ-3.2
+  version: '3.2'
+  technology: Java
+  description: Java Project
+dependency_files:
+  java:
+  - pom.xml
+  - build.gradle
+  - build.gradle.kts
+technology: Java
+target_dirs:
+- C:\Users\A181244\OneDrive - ATOS\Santosh\Personal\Training\Python\Secure-Release\Sample_code\dvpwa
+logging:
+  level: INFO
+  to_file: true
+  log_file: ./logs/security.log
+api_specs:
+- ./api/openapi.yaml
+API_Scanner:
+  base_url: http://demo.owasp-juice.shop/api/Challenges
+  openapi_url: https://example.schemathesis.io/openapi.json
+  auth: {}
+  zap:
+    enabled: true
+    path: C:\Program Files\ZAP\Zed Attack Proxy\zap.bat
+    api_key: jsgisco11qs3cusiu1b3m7dilj
+    proxy: http://127.0.0.1:8081
+  fuzzer:
+    targets:
+    - method: GET
+      path: /Challenges
+    - method: POST
+      path: /Users
+      body_template:
+        email: test@example.com
+        password: pass123
+policies:
+  max_secrets: 1
+  max_severity: HIGH
+  allowed_severity_levels:
+  - LOW
+  - MEDIUM
+  - HIGH
+tools:
+  trivy: trivy
+  dependency_check: C:/Users/A181244/OneDrive - ATOS/Santosh/Security/Tech/dependency-check/bin/dependency-check.bat
+  zap_cli: zap-cli
+report_dir: ./Reports/output
+report:
+  report_header: SECURE RELEASE
+  report_title: SAST Report
+  API_report: API Vulnerability Report
+  report_file_name: SecRel
+  report_footer: Secure Release Report. All Rights Reserved.
+tool_info:
+  company_name: Alien Security
+  tool_name: Secure Release
+  version: 1.0.0
+  author: Alien C00de
+  year: '2025'
+  email: alien.c00de@gmail.com
+  github: https://github.com/Alien-C00de
+  timestamp: '2024-04-24 00:00:00'
+  owner_title: 'Developed by:'
+notify:
+  email: false
+  slack: false

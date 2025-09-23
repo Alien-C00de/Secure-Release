@@ -1,0 +1,5 @@
+# Mark HTML files as documentation so they don't count as code
+*.html linguist-documentation
+
+# Optionally ignore certain files or folders from language stats
+Sample_code/** linguist-documentation

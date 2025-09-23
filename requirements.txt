@@ -1,0 +1,26 @@
+pip install -r requirements.txt
+# Requirements for DevShield project
+aiofiles    # For asynchronous file operations
+asyncio      # For asynchronous programming
+regex     # For regular expression operations 
+requests    # For making HTTP requests
+argparse    # For parsing command-line arguments
+pyyaml      # For YAML file parsing
+beautifulsoup4  # For parsing HTML and XML documents
+jinja2      # For templating in reports
+bandit   # For security analysis of Python code
+pip-audit   # For auditing Python dependencies
+safety   # For checking Python dependencies for known vulnerabilities
+pyfiglet   # For creating ASCII art text
+semgrep   # For static code analysis
+streamlit   # For building the web app
+schemathesis   # For API testing and validation
+python-owasp-zap-v2.4  # For OWASP ZAP API interaction
+requests    # For making HTTP requests
+aiohttp     # For asynchronous HTTP requests
+detect-secrets # for secret scanning
+
+
+ & 'C:\Program Files\ZAP\Zed Attack Proxy\zap.bat' -daemon -host 127.0.0.1 -port 8081 -config api.key=jsgisco11qs3cusiu1b3m7dilj 
+
+ .\zap.bat -daemon -host 127.0.0.1 -port 8081 -config api.key=jsgisco11qs3cusiu1b3m7dilj
