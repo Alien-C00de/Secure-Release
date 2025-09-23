@@ -76,16 +76,18 @@ streamlit run gui_app.py
 ## 🖼️ Screenshots
 - **SAST Dashboard Preview**
 
-<img width="1029" height="729" alt="localhost_8501_ (4)" src="https://github.com/user-attachments/assets/bdaf9b18-6c86-438b-b8d0-9bcdf788cdd7" />
+<img width="1029" height="729" alt="localhost_8501_ (4)" src="https://github.com/user-attachments/assets/6e8bb856-73d5-4250-a77f-f5a1ce95d6b5" />
 
 - **SAST Report Preview**
-<img width="1018" height="763" alt="SAST" src="https://github.com/user-attachments/assets/900ff52d-f94a-43dd-8749-5b8de293e76c" />
+
+<img width="1018" height="763" alt="SAST" src="https://github.com/user-attachments/assets/b2a55cb0-b04d-4def-9a5b-aa717a072bec" />
 
 - **API Scanner Preview**
-<img width="1045" height="765" alt="localhost_8501_ (7)" src="https://github.com/user-attachments/assets/fa1c6940-39b1-42b8-a884-628e8b9a6098" />
 
-- **SAST Report Preview**
-<img width="1001" height="771" alt="API" src="https://github.com/user-attachments/assets/d347ff38-eabd-4f16-847c-6e6c0cf087c6" />
+<img width="1045" height="765" alt="localhost_8501_ (7)" src="https://github.com/user-attachments/assets/c059890a-8de5-420c-969c-ef22e8a88dae" />
+
+- **API Report Preview**
+<img width="1001" height="771" alt="API" src="https://github.com/user-attachments/assets/aa010dc1-4d28-464e-9db2-77a94ff80706" />
 
 
 ## 🚀 Future Enhancements
